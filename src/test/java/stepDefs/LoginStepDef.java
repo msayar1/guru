@@ -13,7 +13,7 @@ public class LoginStepDef {
 	SingletonBrowser sb = SingletonBrowser.getSingletonBrowser();
 	WebDriver driver = sb.getDriver();
 	LoginPage lp = new LoginPage(driver);
-
+//Hi from Sait
 	@Given("I want to go the home page")
 	public void i_want_to_go_the_home_page() {
 		driver.get(lp.getUrl());
