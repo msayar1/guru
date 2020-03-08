@@ -1,0 +1,88 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>Guru99-Demo</groupId>
+  <artifactId>BankGuru</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <properties>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
+	<dependencies>
+		<!-- cucumber-html-report -->
+		<dependency>
+			<groupId>net.masterthought</groupId>
+			<artifactId>cucumber-reporting</artifactId>
+			<version>5.0.2</version>
+		</dependency>
+		<!-- selenium library -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>3.141.59</version>
+		</dependency>
+		<!-- JUnit library -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<scope>test</scope>
+		</dependency>
+		<!-- cucumber java library -->
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-java</artifactId>
+			<version>4.8.0</version>
+		</dependency>
+		<!-- Integrate cucumber and JUnit -->
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-junit</artifactId>
+			<version>4.8.0</version>
+			<scope>test</scope>
+		</dependency>
+		<!-- browser drivers -->
+		<dependency>
+			<groupId>io.github.bonigarcia</groupId>
+			<artifactId>webdrivermanager</artifactId>
+			<version>3.8.1</version>
+		</dependency>
+	</dependencies>
+	<build>
+		<plugins>
+			<!--plugin to run main method in Report.java class in utils package -->
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<version>1.6.0</version>
+				<configuration>
+					<classpathScope>test</classpathScope>
+					<mainClass>utils.Report</mainClass>
+				</configuration>
+				<executions>
+					<execution>
+						<id>run-selenium</id>
+						<phase>test</phase>
+						<goals>
+							<goal>java</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<!-- plugin to create System Property Variables -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.0.0-M4</version>
+				<configuration>
+					<testFailureIgnore>true</testFailureIgnore>
+					<systemPropertyVariables>
+						<tags></tags>
+						<browser>chrome</browser>
+						<url>http://www.demo.guru99.com/V4/</url>
+						<buildDirectory>${project.build.directory}</buildDirectory>
+					</systemPropertyVariables>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

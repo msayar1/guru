@@ -1,0 +1,111 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2020-03-08T03:40:47.443Z",
+        "before": [
+          {
+            "result": {
+              "duration": 21668414000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "Login to user\u0027s account",
+        "description": "",
+        "id": "login;login-to-user-s-account",
+        "after": [
+          {
+            "result": {
+              "duration": 780057300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3885389600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I want to go the home page",
+            "match": {
+              "location": "LoginStepDef.i_want_to_go_the_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 459257700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I enter username",
+            "match": {
+              "location": "LoginStepDef.i_enter_username()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 118787800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I enter password",
+            "match": {
+              "location": "LoginStepDef.i_enter_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1870857200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I click login",
+            "match": {
+              "location": "LoginStepDef.i_click_login()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 10739700,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I should be able to login my account",
+            "match": {
+              "location": "LoginStepDef.i_should_be_able_to_login_my_account()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@valid_login"
+          }
+        ]
+      }
+    ],
+    "name": "Login",
+    "description": "  I want to verify the login section",
+    "id": "login",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/login.feature",
+    "tags": []
+  }
+]
