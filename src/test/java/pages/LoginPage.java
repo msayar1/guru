@@ -5,8 +5,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import utils.SingletonBrowser;
-
 public class LoginPage {
 	
 	
@@ -22,8 +20,6 @@ public class LoginPage {
 		return url;
 	}
 	
-// mngr249460
-// ypAhyzY
 	@FindBy( xpath= "//input[@name='uid']")
 	public WebElement username;
 	

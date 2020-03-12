@@ -1,13 +1,13 @@
 [
   {
-    "line": 3,
+    "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-03-08T03:40:47.443Z",
+        "start_timestamp": "2020-03-11T23:56:50.410Z",
         "before": [
           {
             "result": {
-              "duration": 21668414000,
+              "duration": 16418998000,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 7,
+        "line": 5,
         "name": "Login to user\u0027s account",
         "description": "",
         "id": "login;login-to-user-s-account",
         "after": [
           {
             "result": {
-              "duration": 780057300,
+              "duration": 10223202000,
               "status": "passed"
             },
             "match": {
@@ -35,10 +35,10 @@
         "steps": [
           {
             "result": {
-              "duration": 3885389600,
+              "duration": 6542285900,
               "status": "passed"
             },
-            "line": 8,
+            "line": 6,
             "name": "I want to go the home page",
             "match": {
               "location": "LoginStepDef.i_want_to_go_the_home_page()"
@@ -47,10 +47,10 @@
           },
           {
             "result": {
-              "duration": 459257700,
+              "duration": 260563900,
               "status": "passed"
             },
-            "line": 9,
+            "line": 7,
             "name": "I enter username",
             "match": {
               "location": "LoginStepDef.i_enter_username()"
@@ -59,10 +59,10 @@
           },
           {
             "result": {
-              "duration": 118787800,
+              "duration": 315632700,
               "status": "passed"
             },
-            "line": 10,
+            "line": 8,
             "name": "I enter password",
             "match": {
               "location": "LoginStepDef.i_enter_password()"
@@ -71,10 +71,10 @@
           },
           {
             "result": {
-              "duration": 1870857200,
+              "duration": 2485110200,
               "status": "passed"
             },
-            "line": 11,
+            "line": 9,
             "name": "I click login",
             "match": {
               "location": "LoginStepDef.i_click_login()"
@@ -83,10 +83,10 @@
           },
           {
             "result": {
-              "duration": 10739700,
+              "duration": 45238300,
               "status": "passed"
             },
-            "line": 12,
+            "line": 10,
             "name": "I should be able to login my account",
             "match": {
               "location": "LoginStepDef.i_should_be_able_to_login_my_account()"
@@ -97,6 +97,294 @@
         "tags": [
           {
             "name": "@valid_login"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-03-11T23:57:26.726Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5804839000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "Login to user\u0027s account",
+        "description": "",
+        "id": "login;login-to-user-s-account;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 13337619200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 13239621700,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I want to go the home page",
+            "match": {
+              "location": "LoginStepDef.i_want_to_go_the_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 114008100,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I enter \"MH32\" and \"ypAhyzY\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"MH32\"",
+                  "offset": 8
+                },
+                {
+                  "val": "\"ypAhyzY\"",
+                  "offset": 19
+                }
+              ],
+              "location": "LoginStepDef.i_enter_and(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 390075600,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I click login",
+            "match": {
+              "location": "LoginStepDef.i_click_login()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 83433800,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I should see a warning pop-up",
+            "match": {
+              "location": "LoginStepDef.i_should_see_a_warning_pop_up()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@invalid_login"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-03-11T23:57:59.699Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5783097000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "Login to user\u0027s account",
+        "description": "",
+        "id": "login;login-to-user-s-account;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 8880885100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5857975700,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I want to go the home page",
+            "match": {
+              "location": "LoginStepDef.i_want_to_go_the_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 103038300,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I enter \"mngr249460\" and \"12341\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"mngr249460\"",
+                  "offset": 8
+                },
+                {
+                  "val": "\"12341\"",
+                  "offset": 25
+                }
+              ],
+              "location": "LoginStepDef.i_enter_and(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 241288100,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I click login",
+            "match": {
+              "location": "LoginStepDef.i_click_login()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 87785000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I should see a warning pop-up",
+            "match": {
+              "location": "LoginStepDef.i_should_see_a_warning_pop_up()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@invalid_login"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-03-11T23:58:20.655Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6283291200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "Login to user\u0027s account",
+        "description": "",
+        "id": "login;login-to-user-s-account;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 8677262200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5150305600,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I want to go the home page",
+            "match": {
+              "location": "LoginStepDef.i_want_to_go_the_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1033163400,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I enter \"FloridA\" and \"BostoN\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"FloridA\"",
+                  "offset": 8
+                },
+                {
+                  "val": "\"BostoN\"",
+                  "offset": 22
+                }
+              ],
+              "location": "LoginStepDef.i_enter_and(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 287993000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I click login",
+            "match": {
+              "location": "LoginStepDef.i_click_login()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 293734500,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I should see a warning pop-up",
+            "match": {
+              "location": "LoginStepDef.i_should_see_a_warning_pop_up()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@invalid_login"
           }
         ]
       }

@@ -13,10 +13,10 @@ import net.masterthought.cucumber.sorting.SortingMethod;
 public class Report {
 
 	public static void main(String[] args) throws IOException {
-		generateDemoReport();
+		generateReport();
 	}
 
-	public static void generateDemoReport() throws IOException {
+	public static void generateReport() throws IOException {
 		File reportOutputDirectory = new File("target");
 		List<String> jsonFiles = new ArrayList<>();
 		jsonFiles.add("target/cucumber.json");

@@ -1,0 +1,6 @@
+stepDefs\LoginStepDef.class
+pages\LoginPage.class
+stepDefs\Hooks.class
+utils\Report.class
+utils\SingletonBrowser.class
+runner\TestRunner.class
